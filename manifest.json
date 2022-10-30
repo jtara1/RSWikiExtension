@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "RS Wiki Extension",
+  "description": "adds helpful info to fill in in places",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://runescape.wiki/*"],
+      "js": [
+        "content-scripts/main.js",
+        "content-scripts/money-making-annotations.js"
+      ]
+    }
+  ]
+}
